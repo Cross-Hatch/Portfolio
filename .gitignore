@@ -4,3 +4,5 @@ node_modules
 styles/*.css.map
 styles/*.sass.map
 styles/*.scss.map
+
+.vscode/
