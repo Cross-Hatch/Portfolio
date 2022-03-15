@@ -1,0 +1,8 @@
+node_modules
+
+.sass-cache/
+styles/*.css.map
+styles/*.sass.map
+styles/*.scss.map
+
+.vscode/
