@@ -20,3 +20,15 @@ h1 {
 body {
   background-color: $primary;
 }
+
+section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  // Makes each section cover full view port.
+  height: 100vh;
+
+  &:nth-child(even) {
+    // Colors even numbered sections with the secondary color
+    background-color: $secondary;
+  }
+}

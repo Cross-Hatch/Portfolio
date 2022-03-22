@@ -11293,4 +11293,13 @@ h1, .h1 {
 
 body {
   background-color: #1570f9;
+}
+
+section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  height: 100vh;
+}
+section:nth-child(even) {
+  background-color: #034ee2;
 }/*# sourceMappingURL=main.css.map */
