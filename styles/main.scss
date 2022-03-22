@@ -1,0 +1,18 @@
+$primary: #1570f9;
+$secondary: #034ee2;
+$light: #fefefe;
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Custom Styles Below Here*/
+* {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+h1 {
+  font-family: 'Dela Gothic One', 'Poppins', sans-serif;
+  font-weight: bold;
+}
