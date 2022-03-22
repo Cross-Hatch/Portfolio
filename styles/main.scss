@@ -17,6 +17,16 @@ h1 {
   font-weight: bold;
 }
 
+// Logo Resizing
+// The logo should be nested in a div with class .logo
+.logo {
+  width: 7em;
+
+  img {
+    width: 100%;
+  }
+}
+
 body {
   background-color: $primary;
 }

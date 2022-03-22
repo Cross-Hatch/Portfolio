@@ -11291,6 +11291,13 @@ h1, .h1 {
   font-weight: bold;
 }
 
+.logo {
+  width: 7em;
+}
+.logo img {
+  width: 100%;
+}
+
 body {
   background-color: #1570f9;
 }
