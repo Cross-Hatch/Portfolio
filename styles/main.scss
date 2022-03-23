@@ -44,3 +44,10 @@ section {
     background-color: $secondary;
   }
 }
+
+footer {
+  svg {
+    fill: $light;
+    width: 1.5rem;
+  }
+}

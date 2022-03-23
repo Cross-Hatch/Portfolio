@@ -11310,4 +11310,9 @@ section {
 }
 section:nth-child(even) {
   background-color: #034ee2;
+}
+
+footer svg {
+  fill: #fefefe;
+  width: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
