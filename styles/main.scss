@@ -22,7 +22,7 @@ h1 {
 // Logo Resizing
 // The logo should be nested in a div with class .logo
 .logo {
-  width: 7em;
+  width: 8em;
 
   img {
     width: 100%;
@@ -31,6 +31,13 @@ h1 {
 
 body {
   background-color: $primary;
+}
+
+header {
+  .contact {
+    font-size: 4rem;
+    cursor: pointer;
+  }
 }
 
 section {
@@ -42,6 +49,12 @@ section {
   &:nth-child(even) {
     // Colors even numbered sections with the secondary color
     background-color: $secondary;
+  }
+}
+
+.weare {
+  img {
+    max-width: 100em;
   }
 }
 
