@@ -11317,6 +11317,10 @@ section:nth-child(even) {
   background-color: #034ee2;
 }
 
+.weare img {
+  max-width: 100em;
+}
+
 footer svg {
   fill: #fefefe;
   width: 1.5rem;
