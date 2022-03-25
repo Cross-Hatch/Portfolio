@@ -11284,9 +11284,58 @@ textarea.form-control-lg {
 /* Custom Styles Below Here*/
 * {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #fefefe;
 }
 
 h1, .h1 {
   font-family: "Dela Gothic One", "Poppins", sans-serif;
   font-weight: bold;
+}
+
+.logo {
+  width: 8em;
+}
+.logo img {
+  width: 100%;
+}
+
+body {
+  background-color: #1570f9;
+}
+
+header .contact {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  height: 100vh;
+}
+section:nth-child(even) {
+  background-color: #034ee2;
+}
+
+.team {
+  height: 100%;
+}
+.team .member-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .member-team .title-team {
+  font-size: 1.3rem;
+}
+.team .member-team .visit {
+  color: #fefefe;
+}
+.team img {
+  max-width: 10em;
+}
+
+footer svg {
+  fill: #fefefe;
+  width: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
