@@ -11293,7 +11293,7 @@ h1, .h1 {
 }
 
 .logo {
-  width: 7em;
+  width: 8em;
 }
 .logo img {
   width: 100%;
@@ -11301,6 +11301,11 @@ h1, .h1 {
 
 body {
   background-color: #1570f9;
+}
+
+header .contact {
+  font-size: 4rem;
+  cursor: pointer;
 }
 
 section {
