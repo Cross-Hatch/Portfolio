@@ -33,8 +33,8 @@ body {
   background-color: $primary;
 }
 
-header{
-  .contact{
+header {
+  .contact {
     font-size: 4rem;
     cursor: pointer;
   }
@@ -49,6 +49,29 @@ section {
   &:nth-child(even) {
     // Colors even numbered sections with the secondary color
     background-color: $secondary;
+  }
+}
+
+.team {
+  //make team section fluid
+  height: 100%;
+
+  .member-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-team {
+      font-size: 1.3rem;
+    }
+
+    .visit {
+      color: #fefefe;
+    }
+  }
+
+  img {
+    max-width: 10em;
   }
 }
 
