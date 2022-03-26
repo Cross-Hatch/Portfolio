@@ -11317,35 +11317,27 @@ section:nth-child(even) {
   background-color: #034ee2;
 }
 
-.weare {
-  img {
-    max-width: 100em;
-  }
+.weare img {
+  max-width: 100em;
 }
 
 .team {
-  //make team section fluid
   height: 100%;
-
-  .member-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .title-team {
-      font-size: 1.3rem;
-    }
-
-    .visit {
-      color: #fefefe;
-    }
-  }
-
-  img {
-    max-width: 10em;
-  }
 }
-
+.team .member-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .member-team .title-team {
+  font-size: 1.3rem;
+}
+.team .member-team .visit {
+  color: #fefefe;
+}
+.team img {
+  max-width: 10em;
+}
 
 footer svg {
   fill: #fefefe;
