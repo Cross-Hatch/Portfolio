@@ -11343,7 +11343,7 @@ section:nth-child(even) {
 }
 
 .weare {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .weare img {
   max-width: 100%;
