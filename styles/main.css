@@ -11345,7 +11345,7 @@ section:nth-child(even) {
   overflow-x: hidden;
 }
 .weare img {
-  max-width: 100em;
+  max-width: 100%;
 }
 
 .team {
