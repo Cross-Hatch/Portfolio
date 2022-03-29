@@ -11287,6 +11287,10 @@ textarea.form-control-lg {
   color: #fefefe;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h1, .h1 {
   font-family: "Dela Gothic One", "Poppins", sans-serif;
   font-weight: bold;

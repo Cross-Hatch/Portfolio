@@ -14,6 +14,10 @@ $light: #fefefe;
   color: $light;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: 'Dela Gothic One', 'Poppins', sans-serif;
   font-weight: bold;
@@ -56,7 +60,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   .container {
     position: relative;
     width: 100%;
