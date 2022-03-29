@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/animate.css">
     <title>Cross Hatch</title>
   </head>
   <body>
@@ -29,6 +30,31 @@
           </div>
         </div>
       </header>
+
+      <aside class="forms display-none">
+        <h1>Contact</h1>
+        <h6>Let's vibes and get schwifty</h6>
+        <div class="container row justify-content-center mt-5">
+            <form id="fs-frm" class="" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyodwdr" method="post">
+              <fieldset id="fs-frm-inputs">
+                <div class="form-top">
+                <div class="input-wrap">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="FULL NAME" required="">
+              </div>
+              <div class="input-wrap ms-3">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" data-tempmail="0">
+              </div>
+              </div>
+              <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="MESSAGE" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <div class="submit-btn"><input type="submit" value="Submit"></div>
+            </form>
+        </div>
+      </aside>
 
       <main>
         <section class="landing">
@@ -56,7 +82,7 @@
                   voluptates, incidunt ab fugiat inventore consectetur.
                 </p>
               </div>
-              <img src="./Assets/megaphone.png" alt="megaphone" />
+              <img class="wow jello" src="./Assets/megaphone.png" alt="megaphone" />
             </div>
           </div>
         </section>
@@ -155,5 +181,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </body>
 </html>
