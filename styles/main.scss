@@ -87,3 +87,9 @@ footer {
     width: 1.5rem;
   }
 }
+
+@media (min-width: 768px) {
+  .team {
+    height: 100vh;
+  }
+}

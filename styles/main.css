@@ -11342,4 +11342,10 @@ section:nth-child(even) {
 footer svg {
   fill: #fefefe;
   width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .team {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=main.css.map */
