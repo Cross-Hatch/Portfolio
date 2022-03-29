@@ -131,13 +131,13 @@ footer {
 
     .card{
       background: $light;
+      border-radius: 0.5em;
+      overflow: hidden;
 
     p{
       color: $secondary;
     }
   }
-  
-  }
 
-  
+  }
 }
