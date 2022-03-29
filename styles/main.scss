@@ -75,6 +75,7 @@ section {
     position: absolute;
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
+    max-width: 70%;
     z-index: -10;
   }
 }
