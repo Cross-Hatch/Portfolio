@@ -69,18 +69,18 @@ section {
 
   .hello-txt {
     font-size: 8rem;
+  }
 
-    &::before {
-      content: url(/Assets/tube.png);
-      position: absolute;
-      inset: 50% auto auto 50%;
-      transform: translate(-50%, -50%);
-      z-index: -10;
-    }
+  img {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
   }
 }
 
 .weare {
+  overflow-x: hidden;
   img {
     max-width: 100em;
   }

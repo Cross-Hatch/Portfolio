@@ -11334,14 +11334,16 @@ section:nth-child(even) {
 .landing .hello-txt {
   font-size: 8rem;
 }
-.landing .hello-txt::before {
-  content: url(/Assets/tube.png);
+.landing img {
   position: absolute;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
   z-index: -10;
 }
 
+.weare {
+  overflow-x: hidden;
+}
 .weare img {
   max-width: 100em;
 }
