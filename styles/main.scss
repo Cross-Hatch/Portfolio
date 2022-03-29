@@ -41,6 +41,84 @@ header {
   .contact {
     font-size: 4rem;
     cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0 0 0 -7%;
+      background-color: #1570f9cc;
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+    }
+  }
+}
+
+aside {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .form-top {
+      display: flex;
+    }
+  }
+
+  .submit-btn {
+      margin: 0 auto 0 auto;
+  }
+
+  input[type='submit'] {
+    width: fit-content;
+    background-color: $secondary;
+    color: $light;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: $secondary;
+    box-shadow: 0px 4px 50px $secondary;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.03) ;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  input,
+  textarea {
+    padding: 0.7em;
+    margin: 0.7em;
+    border: 1px solid $secondary;
+    color: $primary;
+    width: 100%;
+    background-color: #fefefe;
+
+    &::placeholder {
+      color: $secondary;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      border: 1px solid $secondary;
+      outline: none;
+    }
   }
 }
 

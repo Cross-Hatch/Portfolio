@@ -11311,6 +11311,84 @@ header .contact {
   font-size: 4rem;
   cursor: pointer;
 }
+header .contact::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 -7%;
+  background-color: #1570f9cc;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+aside {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+}
+aside form {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+}
+aside fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+aside fieldset .form-top {
+  display: flex;
+}
+aside .submit-btn {
+  margin: 0 auto 0 auto;
+}
+aside input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #034ee2;
+  color: #fefefe;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #034ee2;
+  box-shadow: 0px 4px 50px #034ee2;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+aside input[type=submit]:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+aside input[type=submit]:active {
+  transform: scale(0.9);
+}
+aside input,
+aside textarea {
+  padding: 0.7em;
+  margin: 0.7em;
+  border: 1px solid #034ee2;
+  color: #1570f9;
+  width: 100%;
+  background-color: #fefefe;
+}
+aside input::-moz-placeholder, aside textarea::-moz-placeholder {
+  color: #034ee2;
+  opacity: 0.5;
+}
+aside input:-ms-input-placeholder, aside textarea:-ms-input-placeholder {
+  color: #034ee2;
+  opacity: 0.5;
+}
+aside input::placeholder,
+aside textarea::placeholder {
+  color: #034ee2;
+  opacity: 0.5;
+}
+aside input:focus,
+aside textarea:focus {
+  border: 1px solid #034ee2;
+  outline: none;
+}
 
 section {
   padding-top: 4em;
