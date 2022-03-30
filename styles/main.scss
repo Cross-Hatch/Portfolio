@@ -3,13 +3,13 @@ $secondary: #034ee2;
 $light: #fefefe;
 
 //import bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 /* Custom Styles Below Here*/
 * {
-  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   // Makes font color everywhere white
   color: $light;
 }
@@ -34,7 +34,7 @@ html {
 }
 
 h1 {
-  font-family: 'Dela Gothic One', 'Poppins', sans-serif;
+  font-family: "Dela Gothic One", "Poppins", sans-serif;
   font-weight: bold;
 }
 
@@ -86,7 +86,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0;
 
   .container {
     position: relative;
@@ -128,8 +127,9 @@ section {
       font-size: 1.3rem;
     }
 
-    .visit {
+    a {
       color: #fefefe;
+      text-decoration: none;
     }
   }
 
@@ -150,5 +150,28 @@ footer {
 @media (min-width: 768px) {
   .team {
     height: 100vh;
+  }
+}
+.project {
+  //make team section fluid
+  height: 100%;
+
+  .project-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    
+
+    .card{
+      background: $light;
+      border-radius: 0.5em;
+      overflow: hidden;
+
+    p{
+      color: $secondary;
+    }
+  }
+
   }
 }

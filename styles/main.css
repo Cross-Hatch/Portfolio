@@ -11388,8 +11388,9 @@ section:nth-child(even) {
 .team .member-team .title-team {
   font-size: 1.3rem;
 }
-.team .member-team .visit {
+.team .member-team a {
   color: #fefefe;
+  text-decoration: none;
 }
 .team img {
   max-width: 10em;
@@ -11407,4 +11408,21 @@ footer svg {
   .team {
     height: 100vh;
   }
+}
+.project {
+  height: 100%;
+}
+.project .project-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.project .project-team .card {
+  background: #fefefe;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.project .project-team .card p {
+  color: #034ee2;
 }/*# sourceMappingURL=main.css.map */
