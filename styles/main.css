@@ -11289,6 +11289,9 @@ textarea.form-control-lg {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
@@ -11329,6 +11332,7 @@ section {
   padding-top: 4em;
   padding-bottom: 2em;
   height: 100vh;
+  scroll-snap-align: start !important;
 }
 section:nth-child(even) {
   background-color: #034ee2;
@@ -11381,6 +11385,9 @@ section:nth-child(even) {
   max-width: 10em;
 }
 
+footer {
+  scroll-snap-align: start;
+}
 footer svg {
   fill: #fefefe;
   width: 1.5rem;

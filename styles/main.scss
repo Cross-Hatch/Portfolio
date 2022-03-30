@@ -16,6 +16,9 @@ $light: #fefefe;
 
 html {
   overflow-x: hidden;
+  //scroll snaping
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 // custom scrollbar
@@ -61,6 +64,8 @@ section {
   padding-bottom: 2em;
   // Makes each section cover full view port.
   height: 100vh;
+  
+  scroll-snap-align: start !important;
 
   &:nth-child(even) {
     // Colors even numbered sections with the secondary color
@@ -125,6 +130,8 @@ section {
 }
 
 footer {
+  scroll-snap-align: start;
+  
   svg {
     fill: $light;
     width: 1.5rem;
