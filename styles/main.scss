@@ -18,6 +18,18 @@ html {
   overflow-x: hidden;
 }
 
+// custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #cccccc77;
+}
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 50px;
+}
+
 h1 {
   font-family: 'Dela Gothic One', 'Poppins', sans-serif;
   font-weight: bold;
