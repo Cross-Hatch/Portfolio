@@ -14,6 +14,25 @@ $light: #fefefe;
   color: $light;
 }
 
+html {
+  overflow-x: hidden;
+  //scroll snaping
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+// custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #cccccc77;
+}
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 50px;
+}
+
 h1 {
   font-family: "Dela Gothic One", "Poppins", sans-serif;
   font-weight: bold;
@@ -34,6 +53,15 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding-top: 1em;
+
+  position: sticky;
+  top: 0;
+
   .contact {
     font-size: 4rem;
     cursor: pointer;
@@ -41,10 +69,12 @@ header {
 }
 
 section {
-  padding-top: 4em;
+  padding-top: 6em;
   padding-bottom: 2em;
   // Makes each section cover full view port.
   height: 100vh;
+
+  scroll-snap-align: start !important;
 
   &:nth-child(even) {
     // Colors even numbered sections with the secondary color
@@ -65,20 +95,22 @@ section {
 
   .hello-txt {
     font-size: 8rem;
+  }
 
-    &::before {
-      content: url(/Assets/tube.png);
-      position: absolute;
-      inset: 50% auto auto 50%;
-      transform: translate(-50%, -50%);
-      z-index: -10;
-    }
+  img {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    z-index: -10;
   }
 }
 
 .weare {
+  overflow: hidden;
+
   img {
-    max-width: 100em;
+    max-width: 100%;
   }
 }
 
@@ -107,6 +139,8 @@ section {
 }
 
 footer {
+  scroll-snap-align: start;
+
   svg {
     fill: $light;
     width: 1.5rem;

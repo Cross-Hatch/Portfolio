@@ -11287,6 +11287,26 @@ textarea.form-control-lg {
   color: #fefefe;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cccccc77;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #034ee2;
+  border-radius: 50px;
+}
+
 h1, .h1 {
   font-family: "Dela Gothic One", "Poppins", sans-serif;
   font-weight: bold;
@@ -11303,15 +11323,26 @@ body {
   background-color: #1570f9;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding-top: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 header .contact {
   font-size: 4rem;
   cursor: pointer;
 }
 
 section {
-  padding-top: 4em;
+  padding-top: 6em;
   padding-bottom: 2em;
   height: 100vh;
+  scroll-snap-align: start !important;
 }
 section:nth-child(even) {
   background-color: #034ee2;
@@ -11321,6 +11352,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
 }
 .landing .container {
   position: relative;
@@ -11330,16 +11362,19 @@ section:nth-child(even) {
 .landing .hello-txt {
   font-size: 8rem;
 }
-.landing .hello-txt::before {
-  content: url(/Assets/tube.png);
+.landing img {
   position: absolute;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
+  max-width: 70%;
   z-index: -10;
 }
 
+.weare {
+  overflow: hidden;
+}
 .weare img {
-  max-width: 100em;
+  max-width: 100%;
 }
 
 .team {
@@ -11361,6 +11396,9 @@ section:nth-child(even) {
   max-width: 10em;
 }
 
+footer {
+  scroll-snap-align: start;
+}
 footer svg {
   fill: #fefefe;
   width: 1.5rem;
