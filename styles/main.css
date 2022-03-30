@@ -11373,7 +11373,7 @@ section:nth-child(even) {
   overflow: hidden;
 }
 .weare img {
-  max-width: 100%;
+  max-width: 20em;
 }
 
 .project {
@@ -11424,10 +11424,5 @@ footer svg {
 @media (min-width: 768px) {
   .team {
     height: 100vh;
-  }
-}
-@media (max-width: 768px) {
-  .project {
-    height: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

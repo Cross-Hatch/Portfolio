@@ -110,7 +110,7 @@ section {
   overflow: hidden;
 
   img {
-    max-width: 100%;
+    max-width: 20em;
   }
 }
 
@@ -175,8 +175,8 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .project {
-    height: 100%;
-  }
-}
+// @media (min-width: 768px), (orientation: landscape) {
+//   .project {
+//     height: 100vh;
+//   }
+// }
