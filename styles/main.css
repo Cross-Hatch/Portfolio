@@ -11352,7 +11352,6 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0;
 }
 .landing .container {
   position: relative;
@@ -11375,6 +11374,24 @@ section:nth-child(even) {
 }
 .weare img {
   max-width: 100%;
+}
+
+.project {
+  height: 100vh;
+}
+.project .project-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.project .project-team .card {
+  background: #fefefe;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.project .project-team .card p {
+  color: #034ee2;
 }
 
 .team {
@@ -11409,20 +11426,8 @@ footer svg {
     height: 100vh;
   }
 }
-.project {
-  height: 100%;
-}
-.project .project-team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-}
-.project .project-team .card {
-  background: #fefefe;
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-.project .project-team .card p {
-  color: #034ee2;
+@media (max-width: 768px) {
+  .project {
+    height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
