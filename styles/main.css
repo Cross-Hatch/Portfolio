@@ -11377,7 +11377,8 @@ section:nth-child(even) {
 }
 
 .project {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .project .project-team {
   display: flex;
