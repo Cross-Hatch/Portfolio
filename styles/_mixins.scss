@@ -1,0 +1,15 @@
+
+@mixin button($color) {
+  background: $color;
+  box-shadow: 0px 4px 50px $color;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
