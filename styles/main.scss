@@ -3,6 +3,7 @@ $secondary: #034ee2;
 $light: #fefefe;
 
 //import bootstrap
+@import 'mixins';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 /* Custom Styles Below Here*/
@@ -149,6 +150,13 @@ section {
 
     .title-team {
       font-size: 1.3rem;
+    }
+
+    .vist {
+      font-weight: bold;
+      padding: 0.7em 1.2em;
+      margin: 1em;
+      @include button($primary);
     }
 
     a {
