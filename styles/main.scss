@@ -53,6 +53,15 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding-top: 1em;
+
+  position: sticky;
+  top: 0;
+
   .contact {
     font-size: 4rem;
     cursor: pointer;
@@ -60,11 +69,11 @@ header {
 }
 
 section {
-  padding-top: 4em;
+  padding-top: 6em;
   padding-bottom: 2em;
   // Makes each section cover full view port.
   height: 100vh;
-  
+
   scroll-snap-align: start !important;
 
   &:nth-child(even) {
@@ -131,7 +140,7 @@ section {
 
 footer {
   scroll-snap-align: start;
-  
+
   svg {
     fill: $light;
     width: 1.5rem;
