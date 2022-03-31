@@ -11295,7 +11295,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.8em;
 }
 
 ::-webkit-scrollbar-track {
