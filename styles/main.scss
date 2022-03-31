@@ -3,6 +3,7 @@ $secondary: #034ee2;
 $light: #fefefe;
 
 //import bootstrap
+@import 'mixins';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 /* Custom Styles Below Here*/
@@ -12,6 +13,25 @@ $light: #fefefe;
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   // Makes font color everywhere white
   color: $light;
+}
+
+html {
+  overflow-x: hidden;
+  //scroll snaping
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+// custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #cccccc77;
+}
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 50px;
 }
 
 h1 {
@@ -34,6 +54,15 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding-top: 1em;
+
+  position: sticky;
+  top: 0;
+
   .contact {
     font-size: 4rem;
     cursor: pointer;
@@ -41,10 +70,12 @@ header {
 }
 
 section {
-  padding-top: 4em;
+  padding-top: 6em;
   padding-bottom: 2em;
   // Makes each section cover full view port.
   height: 100vh;
+
+  scroll-snap-align: start !important;
 
   &:nth-child(even) {
     // Colors even numbered sections with the secondary color
@@ -52,9 +83,58 @@ section {
   }
 }
 
-.weare {
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hello-txt {
+    font-size: 8rem;
+  }
+
   img {
-    max-width: 100em;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    z-index: -10;
+  }
+}
+
+.weare {
+  overflow: hidden;
+
+  img {
+    max-width: 20em;
+  }
+}
+
+.project {
+  //make team section fluid
+  min-height: 100vh;
+  height: 100%;
+
+  .project-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+    .card {
+      background: $light;
+      border-radius: 0.5em;
+      overflow: hidden;
+
+      p {
+        color: $secondary;
+      }
+    }
   }
 }
 
@@ -66,13 +146,23 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
 
     .title-team {
       font-size: 1.3rem;
     }
 
-    .visit {
+    .vist {
+      font-weight: bold;
+      padding: 0.7em 1.2em;
+      margin: 1em;
+      @include button($primary);
+    }
+
+    a {
       color: #fefefe;
+      text-decoration: none;
     }
   }
 
@@ -82,8 +172,22 @@ section {
 }
 
 footer {
+  scroll-snap-align: start;
+
   svg {
     fill: $light;
     width: 1.5rem;
   }
 }
+
+@media (min-width: 768px) {
+  .team {
+    height: 100vh;
+  }
+}
+
+// @media (min-width: 768px), (orientation: landscape) {
+//   .project {
+//     height: 100vh;
+//   }
+// }
