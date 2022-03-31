@@ -11299,7 +11299,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #cccccc77;
+  background: rgba(204, 204, 204, 0.4666666667);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -11429,6 +11429,10 @@ section:nth-child(even) {
 }
 .team img {
   max-width: 10em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 10em;
 }
 
 footer {
@@ -11443,4 +11447,68 @@ footer svg {
   .team {
     height: 100vh;
   }
+}
+.misc {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 90%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 1000px;
+  -webkit-animation: scroll 4s linear infinite;
+          animation: scroll 4s linear infinite;
+}
+
+.slider-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.slide img {
+  width: 1500px;
+  transition: transform 1s;
+  border-radius: 0.8em;
+  background-color: transparent;
+}
+
+.slide img:hover {
+  transform: translateZ(20px);
 }/*# sourceMappingURL=main.css.map */
