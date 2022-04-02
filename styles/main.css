@@ -11395,9 +11395,9 @@ footer svg {
 
 .slider-track {
   display: flex;
-  width: 1000px;
-  -webkit-animation: scroll 4s linear infinite;
-          animation: scroll 4s linear infinite;
+  width: 3500px;
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
 }
 
 .slider-track:hover {
@@ -11410,7 +11410,7 @@ footer svg {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-250px);
+    transform: translateX(-1750px);
   }
 }
 
@@ -11419,7 +11419,7 @@ footer svg {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-250px);
+    transform: translateX(-1750px);
   }
 }
 .slide {
@@ -11432,7 +11432,7 @@ footer svg {
 }
 
 .slide img {
-  width: 1500px;
+  width: 100%;
   transition: transform 1s;
   border-radius: 0.8em;
   background-color: transparent;
