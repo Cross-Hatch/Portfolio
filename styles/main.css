@@ -11396,6 +11396,7 @@ footer svg {
   width: 3500px;
   -webkit-animation: scroll 30s linear infinite;
           animation: scroll 30s linear infinite;
+  gap: 1em;
 }
 .misc .slider .slider-track:hover {
   -webkit-animation-play-state: paused;
@@ -11403,7 +11404,6 @@ footer svg {
 }
 .misc .slider .slide {
   height: 200px;
-  width: 250px;
   display: flex;
   align-items: center;
   padding: 15px;
